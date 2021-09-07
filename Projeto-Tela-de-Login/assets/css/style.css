@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.content-center {
+    width: 100%;/*Tela preenchida em 100% em qualquer dispositivo*/
+    max-width: 300px;/*Para que não ultrapasse a largura a mais de 300px.*/
+    margin: auto;/*Calcula automaticamente.*/
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 15px;/*Faz um arredondamento nas bordas.*/
+}
+
+.content-center .text-center {/**/
+    text-align: center;
+}
+
+.content-center img {/*img é descendente do elemento com a classe em questão.*/
+    width: 70%;/*Reduzindo o tamanho da imgem*/
+}
+
+.content-center form {
+    margin: 20px;
+}
+
+.content-center input, .content-center button {
+    width: 100%;
+    padding: 10px 5px;/*Forma abreviada para determinar o espaçamento nos quatro lados.*/
+    border: none;/*Retirando as bordas dos botões*/
+    outline: none;/*Retirando outline dos campos de preenchimento.*/
+}
+
+.content-center input {
+    border-bottom-color: #CCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin-bottom: 10px;
+}
+
+.content-center input:focus {
+    border-bottom-color: #D07335;/*Quando clicar, a borda muda para a cor informada.*/
+}
+
+.content-center button {
+    background-color: #D07335;
+    color: #FFF;
+}
+
+.content-center button:hover {/*Fazer um efeito para o botão*/
+    background-color: #B55B28;/*Um laranja mais escuro*/
+    cursor: pointer;/*Faz com que ao passa por cima, aparece a maozinha do cursor*/
+}
+
+.content-center button:active {
+    background-color: #C14E0E;/*Muda a cor ao clicar no botton*/
+}
+
+header a {
+    color: #666;
+    text-decoration: none;/*Estilizando o link.*/
+}
+
+header a:visited {
+    color: #000;/*Depois de ter clicado no link, ter visitado, o link fica preto*/
+}
+
+header a:hover {
+    text-decoration: underline;/*Dá uma lista para identificar que pode ser clicado.*/
+}
+
+header a:focus {/*CONDICIONAIS*/
+    color: red;
+}
+
+header a:active {
+    color: yellow;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+footer {
+    font-size: .8em;
+    text-align: center;
+}
+
+.content-tabuada {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-tabuada table {
+    width: 100%;/*Para o conteúdo da tabela ser totalmente preenchido.*/
+    border-collapse: collapse;/*Retira o espaçamento em branco entre as colunas.*/
+}
+
+.content-tabuada td {/*Pegar todos os descendente de tabuda td e dar esse espaçamento entre eles de 10px*/
+    padding: .75rem;
+    border-top: 1px solid #DEE2E6;
+}
+
+.content-tabuada tbody tr:nth-child(odd) {/*Esse parâmetro 'odd', faz com que selecione um elemento e outro não, de forma alternada. IMPAR e PAR. E com o parâmetro 'even', a ordem é mudada. PAR e IMPAR.*/
+    background-color: rgba(0,0,0,.05);
+}
+
+.content-tabuada tbody tr:hover {
+    background-color: rgba(0,0,0,.15);/*Fazendo trazição de cores quando passar a seta do mouse na linha da tabela.*/
+    cursor: pointer;
+}
+
+#valorA {
+    width: 100%;
+    padding: 10px;
+}
+
+.todo {/*Retirando a bolinha da lista.*/
+    list-style: none;
+    padding: 0px;
+}
+.todo li {
+    padding: 10px;
+    border-bottom: #CCC 1px solid;
+}
+
+.todo li input {
+    width: initial;/*Voltando ao valor inicial do input para a caxinha checkbox ficar ao lado do conteúdo*/
+    margin: 10px;
+}
+
+.todo li.complete {
+    text-decoration: line-through;
+    color: #999;
+    cursor: not-allowed;/*Quando passar o mouse em cima do elemento, ele fica com uma bolinha vermelha.*/
+}
+
+.todo button {
+    width: initial;
+    color: #FFF;
+    background-color: red;
+    float: right;
+    min-width: 30px;
+}
+
+#new-task {
+    width: 100%;
+    padding: 10px;
+}

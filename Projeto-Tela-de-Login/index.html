@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode Web Dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="https://www.hcode.com.br">Hcode</a></h1>
+        <nav></nav>
+    </header>
+
+    <section class="content-center"><!--Classe para centralizar o formulário.-->
+        <div class="text-center"><!--Alinhamento para a img-->
+            <a href="https://www.hcode.com.br" target="_blank">
+                <img src="assets/images/hcode.png" alt="Logo da Hcode">
+            </a>
+        </div>
+
+        <form action="/login" method="POST" id="form-login"><!--PAra formulário, é sempre recomendado utilizar o método 'POST', para que as suas informações não fiquem visíveis. O método 'GET', é mais para paginação, onde não há muita preocupação com os dados.-->
+
+            <div>
+                <input type="email" id="email" placeholder="Digite o seu e-mail" required><!--placeholder dá uma sujestão para o preenchimento, required serve para obrigar o usuário a digitar o campo.-->
+            </div>
+
+            <div>
+                <input type="password" id="password" placeholder="Digite a senha" required>
+            </div>
+
+            <div>
+                <button id="btn-submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Hcode Treinamentos</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script><!--Chamando JavaScript externo. Não é uma boa prática colocar o 'script' no 'head', pois isso nterrompe a renderização e deixa o processo mais lento.-->
+</body>
+</html>
+
+<!--
+                INTRODUÇÃO A CSS3
+
+                        I---- > são o grupo de seletores
+                        I
+                        I
+                header, section, footer { 
+    ------------    background: black; ---- > Fim da Declaração
+    I           }       I         I
+    I                   I         I---- > Valor da declaração
+    I                   I
+    I --- > Propriedade da Declaração       
+    I
+    I --- > bloco de declarações
+
+===========================================================
+                    SELETORES
+        * Universal -- > Seleciona todo mundo 
+        -- > * {
+            background: black;
+        } 
+        * Tipo -- > Só atinge o próprio elemento
+        -- > body {
+            background: black;
+        }
+        * Classes -- > Seletores que atinge as Classes, e que começa com ponto "."
+        -- > .bg-black {
+            background: black;
+        }
+        * atributos -- > Essa forma pega o atributo e o valor dele para poder aplicar os estilos.
+        -- > [type="text"] {
+            backgroun: black;
+        }
+        * Pseudos -- > Esse pode ser um exemplo quando o mouse passa por cima de um elemento e o efeito é aplicado.
+        -- > :hover {
+            background: black;
+        }
+        * ID -- > Quando utilizamos o identificador único em algumas tags para atribuir estilos específicos.
+        -- > #a {
+            background-color: black;
+        }
+-->
